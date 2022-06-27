@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MR5VHWT');</script>
+<!-- End Google Tag Manager -->    
+    
+<script>
+
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+      var results = regex.exec(location.search);
+      return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    $preview = getParameterByName("preview");
+
+
+    if( $preview == "" ){
+      // do nothing
+    } else if( $preview == "control" ){
+      document.cookie = "lander-ab-tests-54934381=lander_control";
+    } else{
+      document.cookie = "lander-ab-tests-54934381=lander_" + $preview;
+    }
+
+  </script>
+<link rel="stylesheet" media="screen" href="https://app.clickfunnels.com/assets/lander.css" />
+<script type="text/javascript" src="https://static.clickfunnels.com/clickfunnels/landers/tmp/q7qvmb3c4b8qrov7.js" charset="UTF-8"></script>
+<style>
+    #IntercomDefaultWidget{
+      display: none;
+    }
+    #Intercom{
+      display:none;
+    }
+  </style>
+<meta name="nodo-proxy" content="html" />
+</head>
+<body>
+    
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MR5VHWT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"71f523066d90a4f9","token":"405b708a9b0242e88fda34dc27903686","version":"2022.6.0","si":100}' crossorigin="anonymous"></script>
+</body>
+    
+    <footer> 
+        
+        <script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('https://pay.ticto.com.br/c/40FD7B70') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+    
+</html>
